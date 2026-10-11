@@ -1,0 +1,14 @@
+[package]
+name = "strata-network"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "HTTP клиент Strata"
+
+[dependencies]
+strata-core.workspace = true
+reqwest.workspace = true
+tokio.workspace = true
+url.workspace = true
+log.workspace = true

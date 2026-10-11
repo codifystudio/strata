@@ -1,0 +1,12 @@
+[package]
+name = "strata-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Ядро Strata: типы, ошибки, координатор pipeline"
+
+[dependencies]
+thiserror.workspace = true
+log.workspace = true
+url.workspace = true

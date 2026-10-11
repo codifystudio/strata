@@ -1,0 +1,13 @@
+[package]
+name = "strata-html"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "HTML парсер Strata"
+
+[dependencies]
+strata-core.workspace = true
+strata-dom.workspace = true
+smol_str.workspace = true
+log.workspace = true

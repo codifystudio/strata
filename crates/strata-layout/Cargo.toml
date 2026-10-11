@@ -1,0 +1,18 @@
+[package]
+name = "strata-layout"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Layout engine Strata (taffy)"
+
+[dependencies]
+strata-core.workspace = true
+strata-dom.workspace = true
+strata-css.workspace = true
+taffy.workspace = true
+ahash.workspace = true
+log.workspace = true
+
+[dev-dependencies]
+strata-html.workspace = true

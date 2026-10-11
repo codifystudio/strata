@@ -1,0 +1,28 @@
+[package]
+name = "strata-browser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Главный бинарник браузера Strata"
+
+[[bin]]
+name = "strata"
+path = "src/main.rs"
+
+[dependencies]
+strata-core.workspace = true
+strata-network.workspace = true
+strata-dom.workspace = true
+strata-html.workspace = true
+strata-css.workspace = true
+strata-layout.workspace = true
+strata-paint.workspace = true
+strata-js.workspace = true
+strata-window.workspace = true
+
+tokio.workspace = true
+url.workspace = true
+log.workspace = true
+env_logger.workspace = true
+anyhow.workspace = true

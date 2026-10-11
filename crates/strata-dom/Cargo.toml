@@ -1,0 +1,13 @@
+[package]
+name = "strata-dom"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "DOM дерево Strata"
+
+[dependencies]
+smol_str.workspace = true
+ahash.workspace = true
+smallvec.workspace = true
+parking_lot.workspace = true
