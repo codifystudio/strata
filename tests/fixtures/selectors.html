@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Complex Selectors</title>
+  <style>
+    body { margin: 20px; font-family: sans-serif; }
+    /* tag */
+    h1 { color: darkblue; }
+    /* class */
+    .highlight { background-color: yellow; }
+    /* id */
+    #main { padding: 10px; }
+    /* descendant */
+    #main p { color: gray; }
+    /* child */
+    ul > li { color: green; }
+    /* multiple classes */
+    .box.primary { border: 2px solid blue; }
+    /* adjacent sibling */
+    h2 + p { font-style: italic; }
+    /* universal */
+    * { box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <h1>Complex Selectors</h1>
+  <div id="main">
+    <p>Paragraph under #main (gray).</p>
+    <p class="highlight">Highlighted text (yellow bg).</p>
+    <h2>Subtitle</h2>
+    <p>Adjacent to h2 (italic).</p>
+    <ul>
+      <li>List item 1 (green)</li>
+      <li>List item 2 (green)</li>
+    </ul>
+    <div class="box primary">Primary box (blue border)</div>
+  </div>
+</body>
+</html>

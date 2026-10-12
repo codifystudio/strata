@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Nested Stress Test</title>
+  <style>
+    body { margin: 0; padding: 10px; }
+    .level-0 { background-color: #f0f0f0; padding: 10px; margin: 5px; }
+    .level-1 { background-color: #e0e0e0; padding: 10px; margin: 5px; }
+    .level-2 { background-color: #d0d0d0; padding: 10px; margin: 5px; }
+    .level-3 { background-color: #c0c0c0; padding: 10px; margin: 5px; }
+    .level-4 { background-color: #b0b0b0; padding: 10px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <div class="level-0">
+    Level 0
+    <div class="level-1">
+      Level 1
+      <div class="level-2">
+        Level 2
+        <div class="level-3">
+          Level 3
+          <div class="level-4">Level 4 deep</div>
+          <div class="level-4">Level 4 sibling</div>
+        </div>
+      </div>
+      <div class="level-2">Level 2 sibling</div>
+    </div>
+  </div>
+  <div class="level-0">
+    Sibling Level 0
+    <div class="level-1">Child Level 1</div>
+  </div>
+</body>
+</html>

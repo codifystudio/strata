@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flexbox Test</title>
+  <style>
+    body { margin: 0; padding: 20px; }
+    .container { display: flex; flex-direction: row; gap: 10px; }
+    .item { background-color: #4a90e2; color: white; padding: 20px; flex: 1; }
+    .item:nth-child(2) { background-color: #e24a4a; }
+    .item:nth-child(3) { background-color: #4ae24a; }
+    .vertical { display: flex; flex-direction: column; gap: 5px; margin-top: 20px; }
+    .vertical .row { background-color: #888; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Flexbox Test</h1>
+  <div class="container">
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three</div>
+  </div>
+  <div class="vertical">
+    <div class="row">Row A</div>
+    <div class="row">Row B</div>
+    <div class="row">Row C</div>
+  </div>
+</body>
+</html>

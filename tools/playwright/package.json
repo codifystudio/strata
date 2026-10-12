@@ -1,0 +1,15 @@
+{
+  "name": "strata-playwright",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Снимает эталонные скриншоты тестовых фикстур в headless Chromium для сравнения со Strata",
+  "scripts": {
+    "capture": "node capture.js",
+    "compare": "node compare.js",
+    "install-browser": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "pngjs": "^7.0.0"
+  }
+}

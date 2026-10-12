@@ -7,3 +7,21 @@ Cargo.lock
 .DS_Store
 *.swp
 *.swo
+
+# Node
+tools/playwright/node_modules/
+tools/playwright/package-lock.json
+
+# Test artifacts (генерируются, не коммитим)
+tests/diff/*.png
+tests/diff/report.html
+tests/screenshots/*.png
+tests/wpt/fixtures/*.png
+tests/wpt/results.json
+tests/wpt/report.html
+
+# Criterion
+target/
+
+# Strata binary
+*.exe

@@ -1,0 +1,47 @@
+[package]
+name = "strata-bench"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Бенчмарки и тесты производительности Strata"
+
+[dependencies]
+strata-core.workspace = true
+strata-dom.workspace = true
+strata-html.workspace = true
+strata-css.workspace = true
+strata-layout.workspace = true
+strata-paint.workspace = true
+taffy.workspace = true
+ahash.workspace = true
+log.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true
+image.workspace = true
+walkdir = "2"
+
+[[bench]]
+name = "html_parse"
+harness = false
+
+[[bench]]
+name = "css_parse"
+harness = false
+
+[[bench]]
+name = "layout_compute"
+harness = false
+
+[[bench]]
+name = "paint_render"
+harness = false
+
+[[bench]]
+name = "full_pipeline"
+harness = false
+
+[[test]]
+name = "visual"
+path = "../../tests/visual/render.rs"

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Forms Test</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    form { margin: 10px 0; }
+    label { display: block; margin: 5px 0; }
+    input, button, select, textarea { margin: 5px 0; padding: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Form Elements</h1>
+  <form>
+    <label>Username: <input type="text" placeholder="Enter name"></label>
+    <label>Password: <input type="password"></label>
+    <label>Email: <input type="email" required></label>
+    <label>Country:
+      <select>
+        <option>United States</option>
+        <option>Canada</option>
+        <option>Germany</option>
+      </select>
+    </label>
+    <label>Bio: <textarea rows="3" cols="30"></textarea></label>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

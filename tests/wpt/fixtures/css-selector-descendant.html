@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div p { background-color: yellow; }
+    span { background-color: cyan; }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Direct child p (should be yellow)</p>
+    <span>
+      <p>Nested p (should also be yellow via descendant)</p>
+    </span>
+  </div>
+  <p>Outside div (should not be yellow)</p>
+</body>
+</html>
